@@ -5,7 +5,7 @@ steps:
      while read PYTHON
      do
       echo $PYTHON
-      cat release.txt | gsutil -m cp -I gs://qa_composer
+      cat release.txt | gsutil -m cp -I gs://prod_composer
      done < release.txt
 options:
       logging: CLOUD_LOGGING_ONLY
