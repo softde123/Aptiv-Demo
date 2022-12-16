@@ -1,11 +1,11 @@
-steps:
+steps: 
   - name: 'gcr.io/cloud-builders/gsutil'
     script: |
      #!/bin/bash
      while read PYTHON
      do
       echo $PYTHON
-      gsutil cp *.py gs://composer_dev
+      cat release.txt | gsutil -m cp -I gs://us-east4-comp-eus4-edw-dev--4cf5d816-bucket/dags/composer_test
      done < release.txt
 options:
       logging: CLOUD_LOGGING_ONLY
