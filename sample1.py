@@ -6,5 +6,3 @@ def findArea(r):
 
 # Driver method 
 print("Area is %.6f" % findArea(5)); 
-
-# This code is contributed by Chinmoy Lenka
