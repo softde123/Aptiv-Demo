@@ -1,3 +1,2 @@
-./sample1.py
-./sample2.py
+./composer.py
 \n
