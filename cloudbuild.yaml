@@ -5,7 +5,7 @@ steps:
      while read PYTHON
      do
       echo $PYTHON
-      gsutil cp release.txt *.py gs://composer_dev
+      gsutil cp *.py gs://composer_dev
      done < release.txt
 options:
       logging: CLOUD_LOGGING_ONLY
