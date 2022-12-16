@@ -1,0 +1,6 @@
+steps: 
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'cp', '-r', 'conf', 'gs://us-east4-comp-eus4-edw-dev--4cf5d816-bucket/dags/composer_test']
+options:
+ logging: CLOUD_LOGGING_ONLY
+ dynamic_substitutions: true
