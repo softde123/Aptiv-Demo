@@ -1,3 +1,2 @@
 ./composer.py
 ./sample1.py
-\n
