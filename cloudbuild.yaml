@@ -1,11 +1,11 @@
-steps:
+steps: 
   - name: 'gcr.io/cloud-builders/gsutil'
     script: |
      #!/bin/bash
      while read PYTHON
      do
       echo $PYTHON
-      gsutil cp *.py gs://qa-composer
+      cat release.txt | gsutil -m cp -I gs://qa_composer
      done < release.txt
 options:
       logging: CLOUD_LOGGING_ONLY
