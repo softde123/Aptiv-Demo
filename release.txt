@@ -1,3 +1,4 @@
 ./composer.py
 ./sample1.py
+./sample2.py
 \n
